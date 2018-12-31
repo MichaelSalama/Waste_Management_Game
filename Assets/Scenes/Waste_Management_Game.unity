@@ -152,6 +152,26 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114262622891859652, guid: c9e98463efb16134d905ae9031a78d3b,
+        type: 2}
+      propertyPath: gearSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114697686550030160, guid: c9e98463efb16134d905ae9031a78d3b,
+        type: 2}
+      propertyPath: gearSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114225629294916830, guid: c9e98463efb16134d905ae9031a78d3b,
+        type: 2}
+      propertyPath: gearSpeed
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114464150905362726, guid: c9e98463efb16134d905ae9031a78d3b,
+        type: 2}
+      propertyPath: gearSpeed
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c9e98463efb16134d905ae9031a78d3b, type: 2}
   m_IsPrefabAsset: 0
