@@ -52,7 +52,8 @@ GameObject:
   - component: {fileID: 212709065148596184}
   - component: {fileID: 114039619328380536}
   - component: {fileID: 61098600463616022}
-  m_Layer: 0
+  - component: {fileID: 50738915493710108}
+  m_Layer: 8
   m_Name: yellowboxbody-Paper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -70,6 +71,7 @@ GameObject:
   - component: {fileID: 212522787499161338}
   - component: {fileID: 114809582189957400}
   - component: {fileID: 61906019809977140}
+  - component: {fileID: 50904532904548216}
   m_Layer: 8
   m_Name: redboxbody-Metal
   m_TagString: Untagged
@@ -88,7 +90,8 @@ GameObject:
   - component: {fileID: 212476314286418336}
   - component: {fileID: 114077248659741144}
   - component: {fileID: 61236156719702778}
-  m_Layer: 0
+  - component: {fileID: 50054097135345400}
+  m_Layer: 8
   m_Name: greenboxbody-Glass
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +203,8 @@ GameObject:
   - component: {fileID: 212999740972097432}
   - component: {fileID: 114587909851168070}
   - component: {fileID: 61421464865628400}
-  m_Layer: 0
+  - component: {fileID: 50031658301852694}
+  m_Layer: 8
   m_Name: blueboxbody-Plastic
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -523,6 +527,86 @@ Transform:
   m_Father: {fileID: 4559268886788788}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!50 &50031658301852694
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1692466727357820}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!50 &50054097135345400
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1106333512953024}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!50 &50738915493710108
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1042987242740240}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
+--- !u!50 &50904532904548216
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1095159158082334}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 7
 --- !u!61 &61098600463616022
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -532,7 +616,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -557,7 +641,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -582,7 +666,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -607,7 +691,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}

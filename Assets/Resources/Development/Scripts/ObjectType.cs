@@ -5,8 +5,4 @@ using UnityEngine;
 public class ObjectType : MonoBehaviour
 {
     public ObjectTypeEnum type;
-
-    
-
-
 }

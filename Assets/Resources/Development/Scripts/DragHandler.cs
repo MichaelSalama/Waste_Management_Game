@@ -10,6 +10,5 @@ public class DragHandler : MonoBehaviour
         Vector2 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = objPosition;
     }
-
-
 }
+
