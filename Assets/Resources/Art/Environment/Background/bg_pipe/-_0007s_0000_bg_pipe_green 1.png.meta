@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 6978bf9d4d00656469dd465862399ae6
+guid: 00a293a53c11f4647903fea16d93dc9b
 TextureImporter:
   fileIDToRecycleName:
     21300000: p1
@@ -55,7 +55,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -384,10 +384,10 @@ TextureImporter:
       name: p13
       rect:
         serializedVersion: 2
-        x: 1293
-        y: 92
-        width: 66
-        height: 29
+        x: 1292
+        y: 93
+        width: 69
+        height: 26
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
