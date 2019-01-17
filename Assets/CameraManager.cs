@@ -2,14 +2,26 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[ExecuteInEditMode]
+//[ExecuteInEditMode]
 public class CameraManager : MonoBehaviour {
 
     public float horizontalResolution = 1920;
-
+#if UNITY_EDITOR
     private void OnGUI()
     {
-        float currentAspect = (float)Screen.width / (float) Screen.height;
+        SclaeFunction();
+    }
+#endif
+#if UNITY_WEBGL
+    private void Awake()
+    {
+        SclaeFunction();
+    }
+#endif
+
+    private void SclaeFunction()
+    {
+        float currentAspect = (float)Screen.width / (float)Screen.height;
         Camera.main.orthographicSize = horizontalResolution / currentAspect / 200;
     }
 
