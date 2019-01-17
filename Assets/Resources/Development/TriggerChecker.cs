@@ -13,7 +13,10 @@ public class TriggerChecker : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        CheckState(collision.gameObject);
+        if (!collision.CompareTag("Filler"))
+        {
+            CheckState(collision.gameObject);
+        }
     }
 
     public void CheckState(GameObject obj)

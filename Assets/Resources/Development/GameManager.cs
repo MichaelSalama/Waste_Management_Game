@@ -27,7 +27,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(score.value);
+        //Debug.Log(score.value);
 
         timeLeft -= Time.deltaTime;
         timeTxt.text = timeLeft.ToString();
