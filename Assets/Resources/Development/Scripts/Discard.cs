@@ -13,11 +13,15 @@ public class Discard : MonoBehaviour
     [HideInInspector]
     public bool finishedMoving;
 
+    [HideInInspector]
+    public bool begin;
+
     private bool beganMove;
 
     Transform planeTransMoving;
 
-    SpriteRenderer sr;
+    Collider2D[] otherCols;
+    SpriteRenderer[] renderers;
     Color color;
 
     [HideInInspector]
@@ -29,6 +33,8 @@ public class Discard : MonoBehaviour
     FlowManager FM;
 
     float fillTime;
+
+    bool stop;
 
     // Start is called before the first frame update
     void Start()
@@ -47,15 +53,40 @@ public class Discard : MonoBehaviour
         {
             fillTime = FM.fillTime;
         }
+
+        //if (stop)
+        //{
+        //    if (finishedMoving)
+        //    {
+        //        ResetPos();
+        //        stop = false;
+        //    }
+        //}
+
+        if (begin && otherCols != null && renderers != null && !finishedMoving)
+        {
+            for (int i = 0; i < otherCols.Length; i++)
+            {
+                bool touching = false;
+
+                touching = otherCols[i].IsTouching(col);
+
+                if (touching)
+                {
+                    DiscardColor(renderers[i]);
+                }
+            }
+        }
     }
 
-    public void SetDiscardData(SpriteRenderer sr, Vector4 color)
+    public void SetDiscardData(SpriteRenderer[] sr, Collider2D[] cols, Vector4 color)
     {
-        this.sr = sr;
+        this.renderers = sr;
         this.color = color;
+        otherCols = cols;
     }   
 
-    public void DiscardColor()
+    public void DiscardColor(SpriteRenderer sr)
     {
         Vector3 normal = new Vector3(0, -1, 0);
         Quaternion rotation = planeTransMoving.rotation;
@@ -127,12 +158,18 @@ public class Discard : MonoBehaviour
         finishedMoving = true;
     }
 
-    public void ResetPos()
+    public void Reset()
+    {
+        ResetPos();
+    }
+
+    private void ResetPos()
     {
         StopAllCoroutines();
         transform.localPosition = beginPos.localPosition;
 
         finishedMoving = false;
         beganMove = false;
+        begin = false;
     }
 }

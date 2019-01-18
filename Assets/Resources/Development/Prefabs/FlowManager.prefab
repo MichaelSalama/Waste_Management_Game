@@ -75,6 +75,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075813697558}
   endPos: {fileID: 289321076242790599}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321074560240514
@@ -242,6 +243,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075128902065}
   endPos: {fileID: 289321076509750293}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321074695981464
@@ -319,6 +321,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075893032133}
   endPos: {fileID: 289321076306714785}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321074743012444
@@ -396,6 +399,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075347387421}
   endPos: {fileID: 289321076066911606}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321074814983334
@@ -473,6 +477,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075813697558}
   endPos: {fileID: 289321076242790599}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321074847997574
@@ -550,6 +555,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560642652}
   endPos: {fileID: 289321074965994748}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321074933130899
@@ -627,6 +633,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560240515}
   endPos: {fileID: 289321076517370752}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321074965994747
@@ -794,6 +801,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075347387421}
   endPos: {fileID: 289321076066911606}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075073733765
@@ -961,6 +969,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075893032133}
   endPos: {fileID: 289321076306714785}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075184665689
@@ -1104,6 +1113,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075813697558}
   endPos: {fileID: 289321076242790599}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075270371956
@@ -1331,6 +1341,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075128902065}
   endPos: {fileID: 289321076509750293}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075415876422
@@ -1408,6 +1419,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560240515}
   endPos: {fileID: 289321076517370752}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075485043441
@@ -1521,6 +1533,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560240515}
   endPos: {fileID: 289321076517370752}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075594314390
@@ -1760,6 +1773,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075893032133}
   endPos: {fileID: 289321076306714785}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075721946811
@@ -1837,6 +1851,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560642652}
   endPos: {fileID: 289321074965994748}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321075749163280
@@ -2196,6 +2211,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560642652}
   endPos: {fileID: 289321074965994748}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076066911605
@@ -2303,6 +2319,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075128902065}
   endPos: {fileID: 289321076509750293}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076078803552
@@ -2380,6 +2397,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075893032133}
   endPos: {fileID: 289321076306714785}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076088113343
@@ -2457,6 +2475,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075347387421}
   endPos: {fileID: 289321076066911606}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076152564477
@@ -2564,6 +2583,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075347387421}
   endPos: {fileID: 289321076066911606}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076242594990
@@ -2641,6 +2661,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075813697558}
   endPos: {fileID: 289321076242790599}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076242790598
@@ -2814,6 +2835,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560240515}
   endPos: {fileID: 289321076517370752}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076306714784
@@ -2921,6 +2943,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075128902065}
   endPos: {fileID: 289321076509750293}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076384187496
@@ -3028,6 +3051,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075874722561}
   endPos: {fileID: 289321075126589473}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076394664308
@@ -3120,7 +3144,7 @@ MonoBehaviour:
       - {fileID: 289321074695981465}
       fillColor: {r: 0.9568628, g: 0.77647066, b: 0.20392159, a: 0}
   currentType: 0
-  fillTime: 1.5
+  fillTime: 1
 --- !u!114 &528999396
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3422,6 +3446,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321074560642652}
   endPos: {fileID: 289321074965994748}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076527723327
@@ -3499,6 +3524,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075874722561}
   endPos: {fileID: 289321075126589473}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076538228263
@@ -3576,6 +3602,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075874722561}
   endPos: {fileID: 289321075126589473}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076569443368
@@ -3683,6 +3710,7 @@ MonoBehaviour:
   beginPos: {fileID: 289321075874722561}
   endPos: {fileID: 289321075126589473}
   finishedMoving: 0
+  begin: 0
   oldColor: {r: 0, g: 0, b: 0, a: 0}
   end: {x: 0, y: 0, z: 0}
 --- !u!1 &289321076617216470

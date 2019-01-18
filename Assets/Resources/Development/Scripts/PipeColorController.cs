@@ -8,12 +8,13 @@ public class PipeColorController : MonoBehaviour
     SpriteRenderer[] sr;
 
     Discard currentDiscard;
+    Discard oldDiscard;
+    int oldDiscardIndex = 0;
     int currentDiscardIndex = 0;
-
-    public bool reset = false;
 
     FlowManager FM;
     ObjectTypeEnum objectType;
+    ObjectTypeEnum oldObjectType;
     Color oldColor;
 
     // Start is called before the first frame update
@@ -33,34 +34,28 @@ public class PipeColorController : MonoBehaviour
         }
         
         currentDiscardIndex = 0;
+        oldDiscardIndex = 0;
+
         currentDiscard = FM.GetCurrentPipes().pipes[currentDiscardIndex];
+        oldDiscard = FM.GetCurrentPipes().pipes[currentDiscardIndex];
+
         objectType = FM.currentType;
+        oldObjectType = FM.currentType;
+
         oldColor = FM.GetCurrentPipes().fillColor;
         currentDiscard.oldColor = oldColor;
     }
 
     // Update is called once per frame
     void Update()
-    {
-        if (reset)
-        {
-            for (int i = 0; i < FM.GetCurrentPipes().pipes.Count; i++)
-            {
-                FM.GetCurrentPipes().pipes[i].ResetPos();
-            }
-
-            for (int i = 0; i < sr.Length; i++)
-            {
-                Reset(sr[i]);
-            }
-
-            currentDiscardIndex = 0;
-            reset = false;
-        }
-
-
+    {      
         if (objectType != ObjectTypeEnum.NULL && objectType != FM.currentType)
         {
+            oldColor = FM.pipeTypes.pipeTypes[(int)objectType].fillColor;
+            oldDiscardIndex = currentDiscardIndex;
+            oldDiscard = FM.pipeTypes.pipeTypes[(int)objectType].pipes[oldDiscardIndex];
+            oldObjectType = objectType;
+
             for (int i = 0; i <= currentDiscardIndex; i++)
             {
                 Vector3 pos = FM.pipeTypes.pipeTypes[(int)objectType].pipes[i].end;
@@ -68,17 +63,12 @@ public class PipeColorController : MonoBehaviour
                 currentDiscard.end = pos;
                 currentDiscard.oldColor = oldColor;
             }
-
-            objectType = FM.currentType;
-
-            currentDiscardIndex = 0;
-            currentDiscard = FM.GetCurrentPipes().pipes[currentDiscardIndex];
             
-            oldColor = FM.GetCurrentPipes().fillColor;
+            currentDiscardIndex = 0;
+            currentDiscard = FM.GetCurrentPipes().pipes[currentDiscardIndex];            
         }
         else if (objectType == ObjectTypeEnum.NULL && objectType != FM.currentType)
         {
-            objectType = FM.currentType;
 
             currentDiscardIndex = 0;
             currentDiscard = FM.GetCurrentPipes().pipes[currentDiscardIndex];
@@ -90,25 +80,43 @@ public class PipeColorController : MonoBehaviour
         if (objectType != ObjectTypeEnum.NULL)
         {
             BeginFlow();
-        }        
+        }
+
+        objectType = FM.currentType;
     }
 
     public void BeginFlow()
-    {               
-        for (int i = 0; i < FM.pipeTypes.pipeTypes.Count; i++)
+    {
+        if (objectType != FM.currentType)
         {
-            if (FM.pipeTypes.pipeTypes[i].fillColor != FM.GetCurrentPipes().fillColor)
+            for (int i = 0; i < FM.pipeTypes.pipeTypes.Count; i++)
             {
-                for (int j = 0; j <= currentDiscardIndex; j++)
+                for (int j = 0; j < FM.pipeTypes.pipeTypes[0].pipes.Count; j++)
                 {
-                    FM.pipeTypes.pipeTypes[i].pipes[j].ResetPos();
+                    FM.pipeTypes.pipeTypes[i].pipes[j].Reset();
                 }
             }
+        }
+
+        for (int i = 0; i <= oldDiscardIndex; i++)
+        {
+            Vector3 pos = FM.pipeTypes.pipeTypes[(int)oldObjectType].pipes[i].end;
+            FM.pipeTypes.pipeTypes[(int)oldObjectType].pipes[i].end = pos;
+        }
+
+        for (int i = 0; i <= currentDiscardIndex; i++)
+        {
+            Vector3 pos = FM.pipeTypes.pipeTypes[(int)objectType].pipes[i].end;
+            //Color col = FM.pipeTypes.pipeTypes[(int)objectType].pipes[i].oldColor;
+            currentDiscard = FM.GetCurrentPipes().pipes[i];
+            currentDiscard.end = pos;
+            currentDiscard.oldColor = oldColor;
         }
 
         if (currentDiscard.finishedMoving)
         {
             Color oc = currentDiscard.oldColor;
+            currentDiscard.oldColor = FM.GetCurrentPipes().fillColor;
 
             currentDiscardIndex++;
 
@@ -120,21 +128,22 @@ public class PipeColorController : MonoBehaviour
             }
 
             currentDiscard = FM.GetCurrentPipes().pipes[currentDiscardIndex];
-            currentDiscard.oldColor = oc;
+            //currentDiscard.oldColor = oc;
         }
 
-        for (int i = 0; i < col.Length; i++)
-        {
-            bool touching = false;
+        currentDiscard.SetDiscardData(sr, col, FM.GetCurrentPipes().fillColor);
+        currentDiscard.begin = true;
+        //for (int i = 0; i < col.Length; i++)
+        //{
+        //    bool touching = false;
 
-            touching = col[i].IsTouching(currentDiscard.col);
+        //    touching = col[i].IsTouching(currentDiscard.col);
 
-            if (touching)
-            {
-                currentDiscard.SetDiscardData(sr[i], FM.GetCurrentPipes().fillColor);
-                currentDiscard.DiscardColor();
-            }            
-        }
+        //    if (touching)
+        //    {
+        //        currentDiscard.DiscardColor();
+        //    }            
+        //}
     }
 
 

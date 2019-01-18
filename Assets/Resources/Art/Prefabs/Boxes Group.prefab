@@ -384,7 +384,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4168972759706692}
   - component: {fileID: 897905281}
-  - component: {fileID: 897905282}
   m_Layer: 8
   m_Name: Boxes Group
   m_TagString: Untagged
@@ -426,22 +425,6 @@ MonoBehaviour:
   modifierX: 0
   modifierY: 0
   IsScaleWithSame: 1
---- !u!114 &897905282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1215210295988374}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 05ba47f0c1a3238449a4fbfe2625b9cb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startscreenSize: {x: 0, y: 0}
-  cam: {fileID: 0}
-  percentOfX: 0.5
-  percentOfY: 0
 --- !u!1 &1310054874615754
 GameObject:
   m_ObjectHideFlags: 0
