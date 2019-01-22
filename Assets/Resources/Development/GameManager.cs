@@ -5,29 +5,31 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    private int[] lvlValues = new[] { 1, 2, 3 };
+    //private int[] lvlValues = new[] { 1, 2, 3 };
 
     public IntVariable score;
     public IntVariable speed;
     public IntVariable level;
 
+    [HideInInspector]
     public float timeLeft;
+    public float levelTime;
 
     public Text timeTxt;
+    public Text ScoreTxt;
 
     private void Awake()
     {
         if (Instance == null)
             Instance = this;
 
-        score.value = 0;
-        speed.value = 3;
-        level.value = 1;
+        SettingInitialValues();
     }
 
     private void FixedUpdate()
     {
-        //Debug.Log(score.value);
+        Debug.Log(score.value);
+        Debug.Log(level.value);
 
         timeLeft -= Time.deltaTime;
         timeTxt.text = timeLeft.ToString();
@@ -36,27 +38,35 @@ public class GameManager : MonoBehaviour
         {
             LevelOver();
         }
-
     }
 
     public void LevelOver()
     {
+        //show score screen
+
         if (level.value == 3)
         {
-            //GameOver();
+            GameOver();
         }
 
         else
         {
-            speed.value+=3;
+            timeLeft = levelTime;
+            speed.value += 3;
             level.value++;
         }
+    }
+
+    public void GameOver()
+    {
+        //show gameover screen
+        //there will be a restart button -- m3 mona isa.
+        SettingInitialValues();
     }
 
     public void IncreaseScore()
     {
         score.value += 1;
-
     }
 
     public void DecreaseSCore()
@@ -71,4 +81,11 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void SettingInitialValues()
+    {
+        score.value = 0;
+        speed.value = 3;
+        level.value = 1;
+        timeLeft = levelTime;
+    }
 }

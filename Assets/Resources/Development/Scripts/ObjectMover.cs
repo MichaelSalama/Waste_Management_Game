@@ -11,7 +11,5 @@ public class ObjectMover : MonoBehaviour
         {
             transform.position += Vector3.right * Time.deltaTime* speed.value;
         }
-     
-        
     }
 }

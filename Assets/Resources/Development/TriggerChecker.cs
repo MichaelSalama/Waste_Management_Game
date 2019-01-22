@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class TriggerChecker : MonoBehaviour
 {
-    ObjectTypeEnum boxType;
-
-    private void Awake()
-    {
-        boxType = gameObject.GetComponent<ObjectType>().type;
-    }
+    public ObjectTypeEnum boxType;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -21,20 +16,20 @@ public class TriggerChecker : MonoBehaviour
 
     public void CheckState(GameObject obj)
     {
-        if (obj.gameObject.GetComponent<ObjectType>().type == boxType)
+        if (obj.gameObject.GetComponent<DragHandler>().type == boxType)
         {
             //success
             //trigger event here to game manager to increase the score.
             GameManager.Instance.IncreaseScore();
             //return to pool>>>>>>>
-            Destroy(obj.gameObject);
+            ObjectPool.Despawn(obj.gameObject);
         }
         else
         {
             //fail
             GameManager.Instance.DecreaseSCore();
             //return to pool>>>>>>>
-            Destroy(obj.gameObject);
+            ObjectPool.Despawn(obj.gameObject);
         }
     }
 }

@@ -74,7 +74,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4314199082871616}
   - component: {fileID: 212344943736471898}
-  - component: {fileID: 5510810766377559186}
   - component: {fileID: 1069905775490605}
   - component: {fileID: 3172782805669225149}
   - component: {fileID: 1069905775490606}
@@ -147,19 +146,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5510810766377559186
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069905775490604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14db0a0c0f3a504d9e551a6d9a2d355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 2
 --- !u!114 &1069905775490605
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +158,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813908ce7d611dd46bd206d748273c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxType: 2
 --- !u!61 &3172782805669225149
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -229,7 +216,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4088833311189740}
   - component: {fileID: 212491587572861038}
-  - component: {fileID: 1283482580084554380}
   - component: {fileID: 1102422419157161}
   - component: {fileID: 2229294182503174409}
   - component: {fileID: 1102422419157162}
@@ -302,19 +288,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1283482580084554380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102422419157160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14db0a0c0f3a504d9e551a6d9a2d355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 3
 --- !u!114 &1102422419157161
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -327,6 +300,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813908ce7d611dd46bd206d748273c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxType: 3
 --- !u!61 &2229294182503174409
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -546,7 +520,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4104192952112874}
   - component: {fileID: 212582893467770580}
-  - component: {fileID: 9036025124098554365}
   - component: {fileID: 1779519696539591}
   - component: {fileID: 4800724403867418954}
   - component: {fileID: 1779519696539592}
@@ -619,19 +592,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &9036025124098554365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779519696539590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14db0a0c0f3a504d9e551a6d9a2d355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 0
 --- !u!114 &1779519696539591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -644,6 +604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813908ce7d611dd46bd206d748273c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxType: 0
 --- !u!61 &4800724403867418954
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -970,7 +931,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4515444456399160}
   - component: {fileID: 212975376783982532}
-  - component: {fileID: 8045290302486201402}
   - component: {fileID: 1954674661355449}
   - component: {fileID: 7562939342691070666}
   - component: {fileID: 1954674661355450}
@@ -1043,19 +1003,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8045290302486201402
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954674661355448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14db0a0c0f3a504d9e551a6d9a2d355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 1
 --- !u!114 &1954674661355449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,6 +1015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 813908ce7d611dd46bd206d748273c10, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  boxType: 1
 --- !u!61 &7562939342691070666
 BoxCollider2D:
   m_ObjectHideFlags: 0

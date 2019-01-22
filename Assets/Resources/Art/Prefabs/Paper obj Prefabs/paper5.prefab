@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 4303843494918636}
   - component: {fileID: 212243531488962116}
   - component: {fileID: 61062179682612946}
-  - component: {fileID: 114832479387325620}
   - component: {fileID: 114015766033265392}
+  - component: {fileID: 1024249010026783292}
   m_Layer: 0
   m_Name: paper5
   m_TagString: Untagged
@@ -108,19 +108,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.35, y: 1.9}
   m_EdgeRadius: 0
---- !u!114 &114832479387325620
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1189707761146406}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e14db0a0c0f3a504d9e551a6d9a2d355, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  type: 2
 --- !u!114 &114015766033265392
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133,3 +120,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e87ede3fb52461d4dad67237cfc89d75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  type: 3
+--- !u!114 &1024249010026783292
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1189707761146406}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d06491b76a231e5489f81aa1791d2d54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {fileID: 11400000, guid: 4958ee6f76852f54ca0733cea4f89bda, type: 2}

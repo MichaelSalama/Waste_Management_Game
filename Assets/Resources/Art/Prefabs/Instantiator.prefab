@@ -1,25 +1,15 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &100100000
-Prefab:
-  m_ObjectHideFlags: 1
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications: []
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1718440111969002}
-  m_IsPrefabAsset: 1
 --- !u!1 &1718440111969002
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4462496443649392}
-  - component: {fileID: 114301550045426336}
+  - component: {fileID: 1457641693}
   m_Layer: 0
   m_Name: Instantiator
   m_TagString: Untagged
@@ -29,9 +19,10 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &4462496443649392
 Transform:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718440111969002}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.31806508, y: -0.14635833, z: 0.24415758}
@@ -40,117 +31,60 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114301550045426336
+--- !u!114 &1457641693
 MonoBehaviour:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1718440111969002}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dfc170cf1a643c4b8ef3894da90bd7d, type: 3}
+  m_Script: {fileID: 11500000, guid: 190c4bb0f886d6a4d96086c1e0190e6f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pools:
-  - tag: Glass1
-    prefab: {fileID: 1791993610561628, guid: 60f8eba702f2ebb40b5dbdb877636494, type: 2}
-    size: 1
-  - tag: Glass2
-    prefab: {fileID: 1434148588950350, guid: 23057d779f1a60c4abed792ebe0c23f6, type: 2}
-    size: 1
-  - tag: Glass3
-    prefab: {fileID: 1095518205628088, guid: 44291cfbaeea6654aa4f75250bf41331, type: 2}
-    size: 1
-  - tag: Glass4
-    prefab: {fileID: 1519648201308658, guid: fafc635b5f365214dbcf5e11b301f68b, type: 2}
-    size: 1
-  - tag: Glass5
-    prefab: {fileID: 1353728968645408, guid: 41e571cb04827664d83b09aa617fa2b7, type: 2}
-    size: 1
-  - tag: Glass6
-    prefab: {fileID: 1071727269171810, guid: 6976f382f0c3919438e350198090234f, type: 2}
-    size: 1
-  - tag: Glass7
-    prefab: {fileID: 1414909275449456, guid: fc76b33ed4566dc49be1eb13d29d87ba, type: 2}
-    size: 1
-  - tag: Glass8
-    prefab: {fileID: 1318607954154782, guid: 3a567c960ef13054aa6f32b4b61e6e8e, type: 2}
-    size: 1
-  - tag: Glass9
-    prefab: {fileID: 1756451845023510, guid: 584f0b6feb4d3a74a9bd1a705b7f3096, type: 2}
-    size: 1
-  - tag: Metal1
-    prefab: {fileID: 1458329288775952, guid: ed31cd5f060e786468e9533abccd29f7, type: 2}
-    size: 1
-  - tag: Metal2
-    prefab: {fileID: 1138774540777764, guid: a9506db58f60bd84db6f4924ae091fc2, type: 2}
-    size: 1
-  - tag: Metal3
-    prefab: {fileID: 1333812245056298, guid: 9e57fa9b871f9414cb8eef0d6bba814e, type: 2}
-    size: 1
-  - tag: Metal4
-    prefab: {fileID: 1957535093616854, guid: d64c0ded0fb261449a63a2a9801e9b7c, type: 2}
-    size: 1
-  - tag: Metal5
-    prefab: {fileID: 1043050925683038, guid: c121d7128451ca44f9322d8a9712acf0, type: 2}
-    size: 1
-  - tag: Metal6
-    prefab: {fileID: 1286766986031896, guid: 2286b16ade558d14e861f92a9a6f2ad4, type: 2}
-    size: 1
-  - tag: Metal7
-    prefab: {fileID: 1902697274820590, guid: f655725c3cfc32346920395a2358d844, type: 2}
-    size: 1
-  - tag: Paper1
-    prefab: {fileID: 1083428654773186, guid: 7258cbe992faf484bbeb9c6b8da4323e, type: 2}
-    size: 1
-  - tag: Paper2
-    prefab: {fileID: 1974449879006734, guid: 7145237ba257b1642b20647c2c74469f, type: 2}
-    size: 1
-  - tag: Paper3
-    prefab: {fileID: 1862868591618046, guid: ef84089e9aa6bb540baf1448c749f194, type: 2}
-    size: 1
-  - tag: Paper4
-    prefab: {fileID: 1970556041484754, guid: 7f8697e5c7840c946a85cd5241fecafa, type: 2}
-    size: 1
-  - tag: Paper5
-    prefab: {fileID: 1189707761146406, guid: c546ed2a496e3e543adefe372cac8aa0, type: 2}
-    size: 1
-  - tag: Paper6
-    prefab: {fileID: 1223195811204534, guid: 74ecbbaf9b422634d9f8fc2a2740840e, type: 2}
-    size: 1
-  - tag: Paper7
-    prefab: {fileID: 1139559102282450, guid: 3ea41182d1af598469028a6d045e952e, type: 2}
-    size: 1
-  - tag: Paper8
-    prefab: {fileID: 1263795183482216, guid: 4e0b5207aa5254b4faf9d1bdcd7a7477, type: 2}
-    size: 1
-  - tag: Plastic1
-    prefab: {fileID: 1197048411335950, guid: b08fd5f53920952479239ca1862934b1, type: 2}
-    size: 1
-  - tag: Plastic2
-    prefab: {fileID: 1530738565783872, guid: 6b6ff3d08a9b05147ac8bd74682ea621, type: 2}
-    size: 1
-  - tag: Plastic3
-    prefab: {fileID: 1418495853058492, guid: bd0d62a9fd93f5747877d6fa9d52879e, type: 2}
-    size: 1
-  - tag: Plastic4
-    prefab: {fileID: 1204450238856316, guid: 8331e4da6d150824fad20c7b72f7faa3, type: 2}
-    size: 1
-  - tag: Plastic5
-    prefab: {fileID: 1612806605841050, guid: c6833d479c130b245bd38596ea3d7be4, type: 2}
-    size: 1
-  - tag: Plastic6
-    prefab: {fileID: 1432247692761252, guid: 95f393a81c089544a9dbea9a197a2d17, type: 2}
-    size: 1
-  - tag: Plastic7
-    prefab: {fileID: 1127804763678418, guid: 460b39480c79711488e9dd0e191dc74b, type: 2}
-    size: 1
-  - tag: Plastic8
-    prefab: {fileID: 1279401737238320, guid: 356b55d65d957e844bf89d63ce923f36, type: 2}
-    size: 1
-  - tag: Plastic9
-    prefab: {fileID: 1373363615936148, guid: 7e6d86356f88afb4e97759cfcf15ecd7, type: 2}
-    size: 1
-  - tag: Plastic10
-    prefab: {fileID: 1575626785809902, guid: d67d6679b25fdf74f9d05d225659ad90, type: 2}
-    size: 1
+  glassList:
+  - {fileID: 1791993610561628, guid: 60f8eba702f2ebb40b5dbdb877636494, type: 3}
+  - {fileID: 1434148588950350, guid: 23057d779f1a60c4abed792ebe0c23f6, type: 3}
+  - {fileID: 1095518205628088, guid: 44291cfbaeea6654aa4f75250bf41331, type: 3}
+  - {fileID: 1519648201308658, guid: fafc635b5f365214dbcf5e11b301f68b, type: 3}
+  - {fileID: 1353728968645408, guid: 41e571cb04827664d83b09aa617fa2b7, type: 3}
+  - {fileID: 1071727269171810, guid: 6976f382f0c3919438e350198090234f, type: 3}
+  - {fileID: 1414909275449456, guid: fc76b33ed4566dc49be1eb13d29d87ba, type: 3}
+  - {fileID: 1318607954154782, guid: 3a567c960ef13054aa6f32b4b61e6e8e, type: 3}
+  - {fileID: 1756451845023510, guid: 584f0b6feb4d3a74a9bd1a705b7f3096, type: 3}
+  metalList:
+  - {fileID: 1458329288775952, guid: ed31cd5f060e786468e9533abccd29f7, type: 3}
+  - {fileID: 1138774540777764, guid: a9506db58f60bd84db6f4924ae091fc2, type: 3}
+  - {fileID: 1333812245056298, guid: 9e57fa9b871f9414cb8eef0d6bba814e, type: 3}
+  - {fileID: 1957535093616854, guid: d64c0ded0fb261449a63a2a9801e9b7c, type: 3}
+  - {fileID: 1043050925683038, guid: c121d7128451ca44f9322d8a9712acf0, type: 3}
+  - {fileID: 1286766986031896, guid: 2286b16ade558d14e861f92a9a6f2ad4, type: 3}
+  - {fileID: 1902697274820590, guid: f655725c3cfc32346920395a2358d844, type: 3}
+  paperList:
+  - {fileID: 1083428654773186, guid: 7258cbe992faf484bbeb9c6b8da4323e, type: 3}
+  - {fileID: 1974449879006734, guid: 7145237ba257b1642b20647c2c74469f, type: 3}
+  - {fileID: 1862868591618046, guid: ef84089e9aa6bb540baf1448c749f194, type: 3}
+  - {fileID: 1970556041484754, guid: 7f8697e5c7840c946a85cd5241fecafa, type: 3}
+  - {fileID: 1189707761146406, guid: c546ed2a496e3e543adefe372cac8aa0, type: 3}
+  - {fileID: 1223195811204534, guid: 74ecbbaf9b422634d9f8fc2a2740840e, type: 3}
+  - {fileID: 1139559102282450, guid: 3ea41182d1af598469028a6d045e952e, type: 3}
+  - {fileID: 1263795183482216, guid: 4e0b5207aa5254b4faf9d1bdcd7a7477, type: 3}
+  plasticList:
+  - {fileID: 1197048411335950, guid: b08fd5f53920952479239ca1862934b1, type: 3}
+  - {fileID: 1530738565783872, guid: 6b6ff3d08a9b05147ac8bd74682ea621, type: 3}
+  - {fileID: 1418495853058492, guid: bd0d62a9fd93f5747877d6fa9d52879e, type: 3}
+  - {fileID: 1204450238856316, guid: 8331e4da6d150824fad20c7b72f7faa3, type: 3}
+  - {fileID: 1612806605841050, guid: c6833d479c130b245bd38596ea3d7be4, type: 3}
+  - {fileID: 1432247692761252, guid: 95f393a81c089544a9dbea9a197a2d17, type: 3}
+  - {fileID: 1127804763678418, guid: 460b39480c79711488e9dd0e191dc74b, type: 3}
+  - {fileID: 1279401737238320, guid: 356b55d65d957e844bf89d63ce923f36, type: 3}
+  - {fileID: 1373363615936148, guid: 7e6d86356f88afb4e97759cfcf15ecd7, type: 3}
+  - {fileID: 1575626785809902, guid: d67d6679b25fdf74f9d05d225659ad90, type: 3}
+  currentObj: {fileID: 0}
+  previousObj: {fileID: 1791993610561628, guid: 60f8eba702f2ebb40b5dbdb877636494,
+    type: 3}
+  redLight: {fileID: 0}
+  greenLight: {fileID: 0}
+  blueLight: {fileID: 0}
+  yellowLight: {fileID: 0}
