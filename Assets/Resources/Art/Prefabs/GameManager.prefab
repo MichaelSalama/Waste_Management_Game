@@ -44,3 +44,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   score: {fileID: 11400000, guid: 3e17a198a2cb98a4fa08fab64f41059e, type: 2}
+  speed: {fileID: 11400000, guid: 4958ee6f76852f54ca0733cea4f89bda, type: 2}
+  level: {fileID: 11400000, guid: 53252fa6c89ec3a4cac08825097039da, type: 2}
+  timeLeft: 10
+  levelTime: 0
+  timeTxt: {fileID: 0}
+  ScoreTxt: {fileID: 0}

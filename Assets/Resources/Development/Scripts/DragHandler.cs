@@ -6,7 +6,6 @@ public class DragHandler : MonoBehaviour
 {
     public ObjectTypeEnum type;
 
-
     private void OnMouseDrag()
     {
         Vector2 mousePosition = new Vector2(Input.mousePosition.x, Input.mousePosition.y);

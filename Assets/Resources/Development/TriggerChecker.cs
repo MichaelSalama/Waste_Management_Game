@@ -19,16 +19,13 @@ public class TriggerChecker : MonoBehaviour
         if (obj.gameObject.GetComponent<DragHandler>().type == boxType)
         {
             //success
-            //trigger event here to game manager to increase the score.
             GameManager.Instance.IncreaseScore();
-            //return to pool>>>>>>>
             ObjectPool.Despawn(obj.gameObject);
         }
         else
         {
             //fail
             GameManager.Instance.DecreaseSCore();
-            //return to pool>>>>>>>
             ObjectPool.Despawn(obj.gameObject);
         }
     }

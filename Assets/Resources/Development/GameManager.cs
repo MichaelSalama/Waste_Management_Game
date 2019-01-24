@@ -28,14 +28,16 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Debug.Log(score.value);
-        Debug.Log(level.value);
+        //Debug.Log(score.value);
+        //Debug.Log(level.value);
 
         timeLeft -= Time.deltaTime;
-        timeTxt.text = timeLeft.ToString();
+        timeTxt.text = timeLeft.ToString("F");
+        ScoreTxt.text = score.value.ToString();
 
-        if (timeLeft <= 0)
+        if (timeLeft <= 0.0f)
         {
+            timeLeft = 0.0f;
             LevelOver();
         }
     }

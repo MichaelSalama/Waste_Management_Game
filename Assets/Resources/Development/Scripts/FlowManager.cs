@@ -17,22 +17,20 @@ public class PipeTypes
 
 public class FlowManager : MonoBehaviour
 {
+    public static FlowManager Instance;
+
     [SerializeField]
     public PipeTypes pipeTypes;
 
     public ObjectTypeEnum currentType;
     public float fillTime;
 
-    // Start is called before the first frame update
-    void Start()
+    private void Awake()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+        }
     }
 
     public Pipes GetCurrentPipes()

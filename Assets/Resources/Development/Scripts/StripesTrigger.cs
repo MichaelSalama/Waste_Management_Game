@@ -8,9 +8,4 @@ public class StripesTrigger : MonoBehaviour
     {
         LinesManager.Instance.SpawnAnewGameObject();
     }
-
-    private void OnBecameInvisible()
-    {
-        ObjectPool.Despawn(gameObject);
-    }
 }

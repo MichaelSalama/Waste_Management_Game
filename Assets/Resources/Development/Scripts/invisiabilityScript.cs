@@ -4,10 +4,8 @@ using UnityEngine;
 
 public class invisiabilityScript : MonoBehaviour
 {
-    //public ObjectVariable parent;
-
     private void OnBecameInvisible()
     {
-        gameObject.SetActive(false);
+        ObjectPool.Despawn(gameObject);
     }
 }

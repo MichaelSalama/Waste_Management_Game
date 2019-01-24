@@ -16,7 +16,8 @@ public class ObjectsManager : MonoBehaviour
     public GameObject greenLight;
     public GameObject blueLight;
     public GameObject yellowLight;
-    
+
+    public List<GameObject> lights = new List<GameObject>();
 
     int randNo = 0;
     int rand = 0;
@@ -40,28 +41,48 @@ public class ObjectsManager : MonoBehaviour
         {
             rand = Random.Range(1, glassList.Count);
             currentObj = ObjectPool.Spawn(glassList[rand], transform.position, Quaternion.identity);
-            greenLight.gameObject.SetActive(true);
-            
+            //greenLight.gameObject.SetActive(true);
+            LightsHandler();
+            FlowManager.Instance.currentType = ObjectTypeEnum.Glass;
+
         }
         else if (randNo == 2 && previousObj.GetComponent<DragHandler>().type != ObjectTypeEnum.Metal)
         {
             rand = Random.Range(1, metalList.Count);
             currentObj = ObjectPool.Spawn(metalList[rand], transform.position, Quaternion.identity);
-            redLight.gameObject.SetActive(true);
+            //redLight.gameObject.SetActive(true);
+            LightsHandler();
+            FlowManager.Instance.currentType = ObjectTypeEnum.Metal;
         }
         if (randNo == 3 && previousObj.GetComponent<DragHandler>().type != ObjectTypeEnum.Paper)
         {
             rand = Random.Range(1, paperList.Count);
             currentObj = ObjectPool.Spawn(paperList[rand], transform.position, Quaternion.identity);
-            yellowLight.gameObject.SetActive(true);
+            //yellowLight.gameObject.SetActive(true);
+            LightsHandler();
+            FlowManager.Instance.currentType = ObjectTypeEnum.Paper;
         }
         if (randNo == 4 && previousObj.GetComponent<DragHandler>().type != ObjectTypeEnum.Plastic)
         {
             rand = Random.Range(1, plasticList.Count);
             currentObj = ObjectPool.Spawn(plasticList[rand], transform.position, Quaternion.identity);
-            blueLight.gameObject.SetActive(true);
+            //blueLight.gameObject.SetActive(true);
+            LightsHandler();
+            FlowManager.Instance.currentType = ObjectTypeEnum.Plastic;
         }
         return currentObj;
+    }
+
+    public void LightsHandler()
+    {
+        foreach (var obj in lights)
+        {
+            obj.gameObject.SetActive(false);
+        if (obj.GetComponent<ObjectType>().type == currentObj.GetComponent<DragHandler>().type)
+            {
+                obj.gameObject.SetActive(true);
+            }
+        }
     }
 
     IEnumerator WaitforTime()
