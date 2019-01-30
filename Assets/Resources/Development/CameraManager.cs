@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //[ExecuteInEditMode]
-public class CameraManager : MonoBehaviour {
+public class CameraManager : MonoBehaviour
+{
 
     public float horizontalResolution = 1920;
 #if UNITY_EDITOR
@@ -22,7 +23,7 @@ public class CameraManager : MonoBehaviour {
     private void SclaeFunction()
     {
         float currentAspect = (float)Screen.width / (float)Screen.height;
-        Camera.main.orthographicSize = horizontalResolution / currentAspect / 200;
+        Camera.main.orthographicSize = horizontalResolution / currentAspect / 83.333f;
     }
 
 }

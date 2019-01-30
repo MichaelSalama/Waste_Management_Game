@@ -12,12 +12,9 @@ public class ObjectsManager : MonoBehaviour
     public GameObject currentObj;
     public GameObject previousObj;
 
-    public GameObject redLight;
-    public GameObject greenLight;
-    public GameObject blueLight;
-    public GameObject yellowLight;
-
     public List<GameObject> lights = new List<GameObject>();
+
+
 
     int randNo = 0;
     int rand = 0;
@@ -84,6 +81,8 @@ public class ObjectsManager : MonoBehaviour
             }
         }
     }
+
+   
 
     IEnumerator WaitforTime()
     {
