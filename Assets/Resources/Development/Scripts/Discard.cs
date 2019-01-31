@@ -32,8 +32,6 @@ public class Discard : MonoBehaviour
 
     FlowManager FM;
 
-    float fillTime;
-
     bool stop;
 
     // Start is called before the first frame update
@@ -48,12 +46,7 @@ public class Discard : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (FM.fillTime != fillTime)
-        {
-            fillTime = FM.fillTime;
-        }
-
+    {      
         //if (stop)
         //{
         //    if (finishedMoving)
@@ -131,7 +124,7 @@ public class Discard : MonoBehaviour
         {
             beganMove = true;
 
-            StartCoroutine(MoveToEnd(fillTime));
+            StartCoroutine(MoveToEnd(FM.fillTime));
         }
     }
 
@@ -146,13 +139,13 @@ public class Discard : MonoBehaviour
         while (counter < duration)
         {
 
-            i += rate * Time.deltaTime;
+            i += rate * Time.fixedDeltaTime;
 
             Vector3 pos = Vector3.Lerp(oldPos, newPos, i);
             transform.localPosition = pos;
 
-            yield return new WaitForSeconds(Time.deltaTime);
-            counter += Time.deltaTime;
+            yield return new WaitForSeconds(Time.fixedDeltaTime);
+            counter += Time.fixedDeltaTime;
         }
 
         finishedMoving = true;
