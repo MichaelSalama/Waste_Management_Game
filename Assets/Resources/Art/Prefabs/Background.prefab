@@ -1861,7 +1861,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1457641693, guid: 9eeb9c9aabd6bb147aa53269e128bb7f, type: 3}
       propertyPath: lights.Array.size
-      value: 8
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1457641693, guid: 9eeb9c9aabd6bb147aa53269e128bb7f, type: 3}
       propertyPath: lights.Array.data[0]

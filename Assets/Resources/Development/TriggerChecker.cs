@@ -12,6 +12,11 @@ public class TriggerChecker : MonoBehaviour
         {
             CheckState(collision.gameObject);
         }
+        foreach (var obj in GameManager.Instance.glow)
+        {
+            obj.gameObject.SetActive(false);
+        }
+        
     }
 
     public void CheckState(GameObject obj)

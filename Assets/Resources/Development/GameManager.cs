@@ -1,11 +1,10 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
-
-    //private int[] lvlValues = new[] { 1, 2, 3 };
 
     public IntVariable score;
     public IntVariable speed;
@@ -18,6 +17,8 @@ public class GameManager : MonoBehaviour
     public Text timeTxt;
     public Text ScoreTxt;
 
+    public List<GameObject> glow = new List<GameObject>();
+
     private void Awake()
     {
         if (Instance == null)
@@ -28,9 +29,6 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Debug.Log(score.value);
-        //Debug.Log(level.value);
-
         timeLeft -= Time.deltaTime;
         timeTxt.text = timeLeft.ToString("F");
         ScoreTxt.text = score.value.ToString();

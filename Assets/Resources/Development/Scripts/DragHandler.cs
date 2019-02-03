@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DragHandler : MonoBehaviour
 {
-    public ObjectTypeEnum type;
+    public ObjectTypeEnum type; 
 
     private void OnMouseDrag()
     {
@@ -12,8 +12,19 @@ public class DragHandler : MonoBehaviour
         Vector2 objPosition = Camera.main.ScreenToWorldPoint(mousePosition);
         transform.position = objPosition;
 
+        foreach(var obj in GameManager.Instance.glow)
+        {
+            obj.gameObject.SetActive(false);
+            if(obj.GetComponent<ObjectType>().type == type)
+            {
+                obj.gameObject.SetActive(true);
+            }
+        }
+
         gameObject.GetComponent<ObjectMover>().enabled= false;
     }
+
+    
 
     private void OnBecameInvisible()
     {
