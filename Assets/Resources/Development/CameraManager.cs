@@ -14,7 +14,7 @@ public class CameraManager : MonoBehaviour
     }
 #endif
 #if UNITY_WEBGL
-    private void Awake()
+    private void Update()
     {
         SclaeFunction();
     }
