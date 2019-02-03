@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1ee61667b52e240ad078444714380e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalResolution: 800
+  horizontalResolution: 1920
 --- !u!1 &2121860791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1796187539961928, guid: c3a5ac870f3030447934dfd3c13ce24e,
@@ -533,6 +533,16 @@ PrefabInstance:
       propertyPath: orthographic size
       value: 5.4
       objectReference: {fileID: 0}
+    - target: {fileID: 1661291525420124357, guid: 7f716bc0795ae0d43bd0d2b4da94c4cf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -89
+      objectReference: {fileID: 0}
+    - target: {fileID: 1661291524857629312, guid: 7f716bc0795ae0d43bd0d2b4da94c4cf,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -66
+      objectReference: {fileID: 0}
     - target: {fileID: 1661291525854121759, guid: 7f716bc0795ae0d43bd0d2b4da94c4cf,
         type: 3}
       propertyPath: horizontalResolution
@@ -542,11 +552,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1661291525420124357, guid: 7f716bc0795ae0d43bd0d2b4da94c4cf,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -63
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1661291525854121759, guid: 7f716bc0795ae0d43bd0d2b4da94c4cf, type: 3}
