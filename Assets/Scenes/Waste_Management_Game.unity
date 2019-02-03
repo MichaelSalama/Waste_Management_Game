@@ -442,7 +442,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1ee61667b52e240ad078444714380e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalResolution: 1920
+  horizontalResolution: 800
 --- !u!1 &2121860791 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1796187539961928, guid: c3a5ac870f3030447934dfd3c13ce24e,
