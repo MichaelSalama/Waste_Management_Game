@@ -701,6 +701,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4977568038453536}
   - component: {fileID: 212710733859082604}
+  - component: {fileID: 260383132042204837}
   m_Layer: 0
   m_Name: Counter with Pipes
   m_TagString: Untagged
@@ -772,6 +773,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &260383132042204837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375210897663876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1414780107185594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1560,6 +1573,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4462721036492458}
   - component: {fileID: 212768365467739166}
+  - component: {fileID: 5277708838759766424}
   m_Layer: 0
   m_Name: Light and Assembly Line
   m_TagString: Untagged
@@ -1629,6 +1643,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5277708838759766424
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1860237697642936}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1943505510857696
 GameObject:
   m_ObjectHideFlags: 0
