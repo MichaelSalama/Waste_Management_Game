@@ -13,7 +13,6 @@ public class ResponsivePosition : MonoBehaviour
         this.transform.position = cam.ScreenToWorldPoint(new Vector3(Screen.width * percentOfX, Screen.height * percentOfY, 10));
         startscreenSize.x = Screen.width;
         startscreenSize.y = Screen.height;
-
     }
 
     // Update is called once per frame
@@ -22,19 +21,9 @@ public class ResponsivePosition : MonoBehaviour
 
         if (Screen.width != startscreenSize.x || Screen.height != startscreenSize.y)
         {
-            this.transform.position = cam.ScreenToWorldPoint(new Vector3(Screen.width * percentOfX, Screen.height*percentOfY, 10));
+            this.transform.position = cam.ScreenToWorldPoint(new Vector3(Screen.width * percentOfX, Screen.height * percentOfY, 10));
             startscreenSize.x = Screen.width;
             startscreenSize.y = Screen.height;
         }
-
     }
-
-
-
-
-
-
-
-
-
 }

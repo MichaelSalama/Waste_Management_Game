@@ -25,5 +25,4 @@ public class CameraManager : MonoBehaviour
         float currentAspect = (float)Screen.width / (float)Screen.height;
         Camera.main.orthographicSize = horizontalResolution / currentAspect / 83.333f;
     }
-
 }

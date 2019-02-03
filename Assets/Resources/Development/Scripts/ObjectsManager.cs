@@ -40,7 +40,7 @@ public class ObjectsManager : MonoBehaviour
             currentObj = ObjectPool.Spawn(glassList[rand], transform.position, Quaternion.identity);
             //greenLight.gameObject.SetActive(true);
             LightsHandler();
-            FlowManager.Instance.currentType = ObjectTypeEnum.Glass;
+            //FlowManager.Instance.currentType = ObjectTypeEnum.Glass;
 
         }
         else if (randNo == 2 && previousObj.GetComponent<DragHandler>().type != ObjectTypeEnum.Metal)
@@ -49,7 +49,7 @@ public class ObjectsManager : MonoBehaviour
             currentObj = ObjectPool.Spawn(metalList[rand], transform.position, Quaternion.identity);
             //redLight.gameObject.SetActive(true);
             LightsHandler();
-            FlowManager.Instance.currentType = ObjectTypeEnum.Metal;
+            //FlowManager.Instance.currentType = ObjectTypeEnum.Metal;
         }
         if (randNo == 3 && previousObj.GetComponent<DragHandler>().type != ObjectTypeEnum.Paper)
         {
@@ -57,7 +57,7 @@ public class ObjectsManager : MonoBehaviour
             currentObj = ObjectPool.Spawn(paperList[rand], transform.position, Quaternion.identity);
             //yellowLight.gameObject.SetActive(true);
             LightsHandler();
-            FlowManager.Instance.currentType = ObjectTypeEnum.Paper;
+            //FlowManager.Instance.currentType = ObjectTypeEnum.Paper;
         }
         if (randNo == 4 && previousObj.GetComponent<DragHandler>().type != ObjectTypeEnum.Plastic)
         {
@@ -65,7 +65,7 @@ public class ObjectsManager : MonoBehaviour
             currentObj = ObjectPool.Spawn(plasticList[rand], transform.position, Quaternion.identity);
             //blueLight.gameObject.SetActive(true);
             LightsHandler();
-            FlowManager.Instance.currentType = ObjectTypeEnum.Plastic;
+            //FlowManager.Instance.currentType = ObjectTypeEnum.Plastic;
         }
         return currentObj;
     }
