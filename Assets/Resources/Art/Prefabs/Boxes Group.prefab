@@ -219,6 +219,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: cd7d96239b955854b8b2fa1556d58242, type: 3}
 --- !u!1 &1102422419157160
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,6 +375,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 65bcf06f772a386439eab5785256ad52, type: 3}
 --- !u!1 &1215210295988374
 GameObject:
   m_ObjectHideFlags: 0
@@ -514,6 +516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
 --- !u!1 &1667274781822340
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +704,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 5fd50ba514bfb5641933a61a301bf9e4, type: 3}
 --- !u!1 &1781203930621592
 GameObject:
   m_ObjectHideFlags: 0
@@ -807,6 +811,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
 --- !u!1 &1796187539961928
 GameObject:
   m_ObjectHideFlags: 0
@@ -913,6 +918,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
 --- !u!1 &1913039116535574
 GameObject:
   m_ObjectHideFlags: 0
@@ -1019,6 +1025,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
 --- !u!1 &1931713443410294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1206,3 +1213,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 9ab264be6fdea6142be6fb62fef5c949, type: 3}

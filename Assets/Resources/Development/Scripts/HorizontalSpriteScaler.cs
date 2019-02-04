@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class HorizontalSpriteScaler : MonoBehaviour
 {
+    public Sprite sprite;
     float aspectRatio = 1920 / 1080;
 
     float newWidth;
@@ -15,7 +16,7 @@ public class HorizontalSpriteScaler : MonoBehaviour
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
-        aspectRatio = sr.sprite.rect.size.x / sr.sprite.rect.y;
+        aspectRatio = sprite.rect.width / sprite.rect.height;
     }
 
     private void Update()
@@ -27,7 +28,8 @@ public class HorizontalSpriteScaler : MonoBehaviour
     {
         transform.localScale = new Vector3(1, 1, 1);
 
-        var width = sr.sprite.bounds.size.x;
+        var width = sprite.bounds.size.x;
+        var height = sprite.bounds.size.y;
 
         var worldScreenHeight = Camera.main.orthographicSize * 2.0;
         var worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;

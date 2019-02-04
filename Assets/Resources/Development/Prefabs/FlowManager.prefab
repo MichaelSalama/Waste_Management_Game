@@ -3143,7 +3143,7 @@ MonoBehaviour:
       - {fileID: 289321074695981465}
       fillColor: {r: 0.9568628, g: 0.77647066, b: 0.20392159, a: 0}
   currentType: 0
-  fillTime: 1
+  fillTime: 0.2
 --- !u!1 &289321076395169866
 GameObject:
   m_ObjectHideFlags: 0

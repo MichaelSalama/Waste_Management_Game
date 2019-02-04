@@ -60,6 +60,10 @@ public class Discard : MonoBehaviour
         {
             for (int i = 0; i < otherCols.Length; i++)
             {
+                if (otherCols[i] == null)
+                {
+                    continue;
+                }
                 bool touching = false;
 
                 touching = otherCols[i].IsTouching(col);

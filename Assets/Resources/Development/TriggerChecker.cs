@@ -21,13 +21,20 @@ public class TriggerChecker : MonoBehaviour
 
     public void CheckState(GameObject obj)
     {
-        if (obj.gameObject.GetComponent<DragHandler>().type == boxType)
+        if (obj == null)
+        {
+            return;
+        }
+
+        var drag = obj.gameObject.GetComponent<DragHandler>();
+
+        if (drag && drag.type == boxType)
         {
             //success
             GameManager.Instance.IncreaseScore();
             ObjectPool.Despawn(obj.gameObject);
         }
-        else
+        else if(drag && drag.type != boxType)
         {
             //fail
             GameManager.Instance.DecreaseSCore();
