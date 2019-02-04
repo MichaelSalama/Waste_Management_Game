@@ -15,6 +15,7 @@ public class HorizontalSpriteScaler : MonoBehaviour
     private void Start()
     {
         sr = GetComponent<SpriteRenderer>();
+        aspectRatio = sr.sprite.rect.size.x / sr.sprite.rect.y;
     }
 
     private void Update()
