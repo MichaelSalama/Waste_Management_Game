@@ -11,14 +11,6 @@ public class HorizontalSpriteScaler : MonoBehaviour
     float newWidth;
     float newHeight;
 
-    SpriteRenderer sr;
-
-    private void Start()
-    {
-        sr = GetComponent<SpriteRenderer>();
-        aspectRatio = sprite.rect.width / sprite.rect.height;
-    }
-
     private void Update()
     {
         ResizeSpriteToScreen();      
@@ -29,7 +21,6 @@ public class HorizontalSpriteScaler : MonoBehaviour
         transform.localScale = new Vector3(1, 1, 1);
 
         var width = sprite.bounds.size.x;
-        var height = sprite.bounds.size.y;
 
         var worldScreenHeight = Camera.main.orthographicSize * 2.0;
         var worldScreenWidth = worldScreenHeight / Screen.height * Screen.width;

@@ -77,7 +77,6 @@ GameObject:
   - component: {fileID: 1069905775490605}
   - component: {fileID: 3172782805669225149}
   - component: {fileID: 1069905775490606}
-  - component: {fileID: 1278849985}
   m_Layer: 8
   m_Name: BlueBox
   m_TagString: Untagged
@@ -207,19 +206,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1278849985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1069905775490604}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: cd7d96239b955854b8b2fa1556d58242, type: 3}
 --- !u!1 &1102422419157160
 GameObject:
   m_ObjectHideFlags: 0
@@ -233,7 +219,6 @@ GameObject:
   - component: {fileID: 1102422419157161}
   - component: {fileID: 2229294182503174409}
   - component: {fileID: 1102422419157162}
-  - component: {fileID: 496013157}
   m_Layer: 8
   m_Name: YellowBox
   m_TagString: Untagged
@@ -363,19 +348,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &496013157
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1102422419157160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 65bcf06f772a386439eab5785256ad52, type: 3}
 --- !u!1 &1215210295988374
 GameObject:
   m_ObjectHideFlags: 0
@@ -421,7 +393,6 @@ GameObject:
   - component: {fileID: 4840775653469508}
   - component: {fileID: 212336129449211326}
   - component: {fileID: 4271232846863682989}
-  - component: {fileID: 6570709366357798214}
   m_Layer: 8
   m_Name: blueboxlight-Plastic
   m_TagString: Untagged
@@ -504,19 +475,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 2
---- !u!114 &6570709366357798214
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1310054874615754}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
 --- !u!1 &1667274781822340
 GameObject:
   m_ObjectHideFlags: 0
@@ -562,7 +520,6 @@ GameObject:
   - component: {fileID: 1779519696539591}
   - component: {fileID: 4800724403867418954}
   - component: {fileID: 1779519696539592}
-  - component: {fileID: 475458069}
   m_Layer: 8
   m_Name: RedBox
   m_TagString: Untagged
@@ -692,19 +649,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &475458069
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1779519696539590}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 5fd50ba514bfb5641933a61a301bf9e4, type: 3}
 --- !u!1 &1781203930621592
 GameObject:
   m_ObjectHideFlags: 0
@@ -716,7 +660,6 @@ GameObject:
   - component: {fileID: 4531451543829980}
   - component: {fileID: 212925785797592868}
   - component: {fileID: 5721493693131508869}
-  - component: {fileID: 784331591752187245}
   m_Layer: 8
   m_Name: redboxlight-Metal
   m_TagString: Untagged
@@ -799,19 +742,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 0
---- !u!114 &784331591752187245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1781203930621592}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
 --- !u!1 &1796187539961928
 GameObject:
   m_ObjectHideFlags: 0
@@ -823,7 +753,6 @@ GameObject:
   - component: {fileID: 4819603920851830}
   - component: {fileID: 212892932736114140}
   - component: {fileID: 382674621785604339}
-  - component: {fileID: 6630330800301900590}
   m_Layer: 8
   m_Name: yellowboxlight-Paper
   m_TagString: Untagged
@@ -906,19 +835,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 3
---- !u!114 &6630330800301900590
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1796187539961928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
 --- !u!1 &1913039116535574
 GameObject:
   m_ObjectHideFlags: 0
@@ -930,7 +846,6 @@ GameObject:
   - component: {fileID: 4414229568152276}
   - component: {fileID: 212033039356016730}
   - component: {fileID: 638515370771670164}
-  - component: {fileID: 1510965615393292660}
   m_Layer: 8
   m_Name: greenboxlight-Glass
   m_TagString: Untagged
@@ -1013,19 +928,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   type: 1
---- !u!114 &1510965615393292660
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1913039116535574}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
 --- !u!1 &1931713443410294
 GameObject:
   m_ObjectHideFlags: 0
@@ -1071,7 +973,6 @@ GameObject:
   - component: {fileID: 1954674661355449}
   - component: {fileID: 7562939342691070666}
   - component: {fileID: 1954674661355450}
-  - component: {fileID: 1240547042}
   m_Layer: 8
   m_Name: GreenBox
   m_TagString: Untagged
@@ -1201,16 +1102,3 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 7
---- !u!114 &1240547042
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1954674661355448}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 9ab264be6fdea6142be6fb62fef5c949, type: 3}

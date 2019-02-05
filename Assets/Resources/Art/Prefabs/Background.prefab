@@ -139,7 +139,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4968960736704672}
   - component: {fileID: 212016513199184808}
-  - component: {fileID: 434598205}
   m_Layer: 0
   m_Name: Recycle-Background
   m_TagString: Untagged
@@ -209,19 +208,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &434598205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1090874861610634}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 2da08c91d2693d04ba4dc61e56b0a80f, type: 3}
 --- !u!1 &1094599245194846
 GameObject:
   m_ObjectHideFlags: 0
@@ -702,7 +688,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4977568038453536}
   - component: {fileID: 212710733859082604}
-  - component: {fileID: 260383132042204837}
   m_Layer: 0
   m_Name: Counter with Pipes
   m_TagString: Untagged
@@ -774,19 +759,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &260383132042204837
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1375210897663876}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 4c7983f4613ffbc438e83378cf4bfbf9, type: 3}
 --- !u!1 &1414780107185594
 GameObject:
   m_ObjectHideFlags: 0
@@ -1575,7 +1547,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4462721036492458}
   - component: {fileID: 212768365467739166}
-  - component: {fileID: 5277708838759766424}
   m_Layer: 0
   m_Name: Light and Assembly Line
   m_TagString: Untagged
@@ -1645,19 +1616,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &5277708838759766424
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1860237697642936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 343c09ce0b9513e428bf5a523025f2cc, type: 3}
 --- !u!1 &1943505510857696
 GameObject:
   m_ObjectHideFlags: 0
@@ -1813,8 +1771,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8292833817197756816}
-  - component: {fileID: 7490345947550132868}
-  - component: {fileID: 1741715103}
   m_Layer: 0
   m_Name: Pipes
   m_TagString: Pipe
@@ -1837,32 +1793,6 @@ Transform:
   m_Father: {fileID: 4774278952812818}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &7490345947550132868
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458444499337728419}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 00a293a53c11f4647903fea16d93dc9b, type: 3}
---- !u!114 &1741715103
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 458444499337728419}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20fb15f7b1d0f3d4683d71aa32e23912, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sprite: {fileID: 21300000, guid: 00a293a53c11f4647903fea16d93dc9b, type: 3}
 --- !u!1 &2107950834152380672
 GameObject:
   m_ObjectHideFlags: 0
