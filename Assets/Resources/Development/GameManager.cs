@@ -14,6 +14,10 @@ public class GameManager : MonoBehaviour
     public float timeLeft;
     public float levelTime;
 
+    public GameObject WorkingGirl;
+    public GameObject ScoreBackground;
+    public GameObject ScoreGirl;
+
     public Text timeTxt;
     public Text ScoreTxt;
 
@@ -43,6 +47,7 @@ public class GameManager : MonoBehaviour
     public void LevelOver()
     {
         //show score screen
+        ShowScoreProcedure();
 
         if (level.value == 3)
         {
@@ -62,6 +67,20 @@ public class GameManager : MonoBehaviour
         //show gameover screen
         //there will be a restart button -- m3 mona isa.
         SettingInitialValues();
+    }
+
+    public void ShowScoreProcedure()
+    {
+        WorkingGirl.SetActive(false);
+        ScoreBackground.SetActive(true);
+        ScoreGirl.SetActive(true);
+    }
+
+    public void HideScoreProcedure()
+    {
+        WorkingGirl.SetActive(true);
+        ScoreBackground.SetActive(false);
+        ScoreGirl.SetActive(false);
     }
 
     public void IncreaseScore()
